@@ -41,7 +41,7 @@ const CommonHead = ({ meta, children }) => {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:title" content={title} />
-
+            <meta name="referrer" content="never" />
             {BLOG.COMMENT_WEBMENTION.ENABLE && (
                 <>
                     <link rel="webmention" href={`https://webmention.io/${BLOG.COMMENT_WEBMENTION.HOSTNAME}/webmention`} />
